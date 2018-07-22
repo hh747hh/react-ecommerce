@@ -11,6 +11,7 @@ import { Provider } from "react-redux";
 import Layout from "containers/layout";
 import Phones from "containers/phones";
 import Phone from "containers/phone";
+import Basket from "containers/basket";
 
 import reducers from "reducers";
 
@@ -29,6 +30,7 @@ ReactDOM.render(
         <Route path="/categories/:id" component={Phones} />
       </Route>
       <Route path="/phones/:id" component={Phone} />
+      <Route path="/basket" component={Basket} />
     </Router>
   </Provider>,
   document.getElementById("root")
